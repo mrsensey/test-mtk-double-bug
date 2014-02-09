@@ -1,0 +1,64 @@
+D/dalvikvm: Compiler: Building trace for calcX, offset 0
+D/dalvikvm: 0x457b83e4: 0x0019 const-wide/high16 v0, (#16368), (#0)
+D/dalvikvm: 0x457b83e8: 0x0019 const-wide/high16 v2, (#16352), (#0)
+D/dalvikvm: 0x457b83ec: 0x0019 const-wide/high16 v4, (#16592), (#0)
+D/dalvikvm: 0x457b83f0: 0x00ce div-double/2addr v0, v4, (#0)
+D/dalvikvm: 0x457b83f2: 0x00cb add-double/2addr v0, v2, (#0)
+D/dalvikvm: 0x457b83f4: 0x0010 return-wide v0, (#0), (#0)
+D/dalvikvm: TRACEINFO (6): 0x457b83e4 LCalc;calcX.()D 0 9 of 9, 4 blocks
+D/dalvikvm: Compiling LCalc; calcX
+D/dalvikvm: 9 insns
+D/dalvikvm: 4 blocks in total
+D/dalvikvm: Block 0 (Entry Block) (insn 0000 - 0000 empty)
+D/dalvikvm:   Fallthrough : block 1 (0000)
+D/dalvikvm: Block 1 (Code Block) (insn 0000 - 0008)
+D/dalvikvm: Block 2 (PC Reconstruction) (insn 0000 - 0000 empty)
+D/dalvikvm: Block 3 (Exception Handling) (insn 0000 - 0000 empty)
+D/dalvikvm: Trace Dalvik PC: 0x457b83e4
+D/dalvikvm: Dumping LIR insns
+D/dalvikvm: installed code is at 0x45deb000
+D/dalvikvm: total size is 124 bytes
+D/dalvikvm: 0x45deb000 (0000): data    0xc278(49784)
+D/dalvikvm: 0x45deb002 (0002): data    0x457a(17786)
+D/dalvikvm: 0x45deb004 (0004): data    0x0044(68)
+D/dalvikvm: 0x45deb006 (0006): ldr     r0, [r15pc, -#8]
+D/dalvikvm: 0x45deb00a (000a): ldr     r1, [r0, #0]
+D/dalvikvm: 0x45deb00c (000c): adds    r1, r1, #1
+D/dalvikvm: 0x45deb00e (000e): str     r1, [r0, #0]
+D/dalvikvm: -------- entry offset: 0x0000
+D/dalvikvm: L0x4579e28c:
+D/dalvikvm: -------- dalvik offset: 0x0000 @ const-wide/high16 v0, (#16368), (#0)
+D/dalvikvm: 0x45deb010 (0010): vldr    d8, [r15, #96]
+D/dalvikvm: -------- dalvik offset: 0x0002 @ const-wide/high16 v2, (#16352), (#0)
+D/dalvikvm: 0x45deb014 (0014): vmov.f64  d9, d8
+D/dalvikvm: -------- dalvik offset: 0x0004 @ const-wide/high16 v4, (#16592), (#0)
+D/dalvikvm: 0x45deb018 (0018): vmov.f64  d10, d9
+D/dalvikvm: -------- dalvik offset: 0x0006 @ div-double/2addr v0, v4, (#0)
+D/dalvikvm: 0x45deb01c (001c): vdivd   d8, d8, d10
+D/dalvikvm: -------- dalvik offset: 0x0007 @ add-double/2addr v0, v2, (#0)
+D/dalvikvm: 0x45deb020 (0020): vadd    d8, d8, d9
+D/dalvikvm: -------- dalvik offset: 0x0008 @ return-wide v0, (#0), (#0)
+D/dalvikvm: 0x45deb024 (0024): vmov.f64  d11, d8
+D/dalvikvm: 0x45deb028 (0028): vstr    d11, [r6, #16]
+D/dalvikvm: 0x45deb02c (002c): vstr    d8, [r5, #0]
+D/dalvikvm: 0x45deb030 (0030): vstr    d10, [r5, #16]
+D/dalvikvm: 0x45deb034 (0034): vstr    d9, [r5, #8]
+D/dalvikvm: 0x45deb038 (0038): blx_1   0x45dea028
+D/dalvikvm: 0x45deb03a (003a): blx_2   see above
+D/dalvikvm: 0x45deb03c (003c): b       0x45deb040 (L0x4579f068)
+D/dalvikvm: 0x45deb03e (003e): undefined
+D/dalvikvm: L0x4579f068:
+D/dalvikvm: -------- reconstruct dalvik PC : 0x457b83f4 @ +0x0008
+D/dalvikvm: 0x45deb040 (0040): ldr     r0, [r15pc, #28]
+D/dalvikvm: Exception_Handling:
+D/dalvikvm: 0x45deb044 (0044): ldr     r1, [r6, #108]
+D/dalvikvm: 0x45deb046 (0046): blx     r1
+D/dalvikvm: -------- end of chaining cells (0x0048)
+D/dalvikvm: 0x45deb060 (0060): .word (0x457b83f4)
+D/dalvikvm: 0x45deb064 (0064): .word (0)
+D/dalvikvm: 0x45deb068 (0068): .word (0x40d00000)
+D/dalvikvm: 0x45deb06c (006c): .word (0)
+D/dalvikvm: 0x45deb070 (0070): .word (0x3fe00000)
+D/dalvikvm: 0x45deb074 (0074): .word (0)
+D/dalvikvm: 0x45deb078 (0078): .word (0x3ff00000)
+D/dalvikvm: End LCalc;calcX, 6 Dalvik instructions

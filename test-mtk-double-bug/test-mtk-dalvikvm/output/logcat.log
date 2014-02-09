@@ -1,0 +1,172 @@
+D/dalvikvm: boot class : 
+D/dalvikvm:   (0) core.jar
+D/dalvikvm:   (1) core-junit.jar
+D/dalvikvm:   (2) bouncycastle.jar
+D/dalvikvm:   (3) ext.jar
+D/dalvikvm:   (4) framework.jar
+D/dalvikvm:   (5) telephony-common.jar
+D/dalvikvm:   (6) mms-common.jar
+D/dalvikvm:   (7) android.policy.jar
+D/dalvikvm:   (8) services.jar
+D/dalvikvm:   (9) apache-xml.jar
+D/dalvikvm:   (10) mediatek-common.jar
+D/dalvikvm:   (11) mediatek-framework.jar
+D/dalvikvm:   (12) mediatek-op.jar
+D/dalvikvm:   (13) secondary-framework.jar
+D/dalvikvm:   (14) CustomProperties.jar
+D/dalvikvm:   (15) gnframework.jar
+D/dalvikvm:   (16) am.jar
+D/dalvikvm: threadid=1: interp stack at 0x419a1000
+D/dalvikvm: Trying to load lib libjavacore.so 0x0
+D/dalvikvm: Added shared lib libjavacore.so 0x0
+D/dalvikvm: Trying to load lib libnativehelper.so 0x0
+D/dalvikvm: Added shared lib libnativehelper.so 0x0
+D/dalvikvm: +++ finishing prep on main VM thread
+D/dalvikvm: open_cached_dex_file : Mtk.jar /sdcard/data/dalvik-cache/storage@sdcard0@Mtk.jar@classes.dex
+I/dalvikvm: DexOpt: source file mod time mismatch (4449af40 vs 4449af4d)
+D/dalvikvm: ODEX file is stale or bad; removing and retrying (/sdcard/data/dalvik-cache/storage@sdcard0@Mtk.jar@classes.dex)
+D/dalvikvm: DexOpt: --- BEGIN 'Mtk.jar' (bootstrap=0) ---
+D/dalvikvm: boot class : 
+D/dalvikvm:   (0) core.jar
+D/dalvikvm:   (1) core-junit.jar
+D/dalvikvm:   (2) bouncycastle.jar
+D/dalvikvm:   (3) ext.jar
+D/dalvikvm:   (4) framework.jar
+D/dalvikvm:   (5) telephony-common.jar
+D/dalvikvm:   (6) mms-common.jar
+D/dalvikvm:   (7) android.policy.jar
+D/dalvikvm:   (8) services.jar
+D/dalvikvm:   (9) apache-xml.jar
+D/dalvikvm:   (10) mediatek-common.jar
+D/dalvikvm:   (11) mediatek-framework.jar
+D/dalvikvm:   (12) mediatek-op.jar
+D/dalvikvm:   (13) secondary-framework.jar
+D/dalvikvm:   (14) CustomProperties.jar
+D/dalvikvm:   (15) gnframework.jar
+D/dalvikvm:   (16) am.jar
+D/dalvikvm: threadid=1: interp stack at 0x40c60000
+D/dalvikvm: DexOpt: load 3ms, verify+opt 1ms, 94084 bytes
+D/dalvikvm: DexOpt: --- END 'Mtk.jar' (success) ---
+D/dalvikvm: DEX prep 'Mtk.jar': unzip in 0ms, rewrite 60ms
+D/dalvikvm: create interp thread : stack size=32KB
+D/dalvikvm: create new thread
+D/dalvikvm: new thread created
+D/dalvikvm: update thread list
+D/dalvikvm: threadid=2: interp stack at 0x45791000
+D/dalvikvm: threadid=2: created from interp
+D/dalvikvm: start new thread
+D/dalvikvm: create interp thread : stack size=32KB
+D/dalvikvm: create new thread
+D/dalvikvm: new thread created
+D/dalvikvm: update thread list
+D/dalvikvm: threadid=2: notify debugger
+D/dalvikvm: threadid=2 (ReferenceQueueDaemon): calling run()
+D/dalvikvm: threadid=3: interp stack at 0x45899000
+D/dalvikvm: threadid=3: created from interp
+D/dalvikvm: start new thread
+D/dalvikvm: create interp thread : stack size=32KB
+D/dalvikvm: create new thread
+D/dalvikvm: new thread created
+D/dalvikvm: update thread list
+D/dalvikvm: threadid=3: notify debugger
+D/dalvikvm: threadid=3 (FinalizerDaemon): calling run()
+D/dalvikvm: threadid=4: interp stack at 0x459a1000
+D/dalvikvm: threadid=4: created from interp
+D/dalvikvm: start new thread
+D/dalvikvm: threadid=4: notify debugger
+D/dalvikvm: threadid=4 (FinalizerWatchdogDaemon): calling run()
+D/dalvikvm: threadid=5: interp stack at 0x45ba9000
+D/dalvikvm: threadid=6: interp stack at 0x45cb1000
+D/dalvikvm: Elevating priority from 0 to -8
+D/dalvikvm: threadid=7: interp stack at 0x45db9000
+D/dalvikvm: --------
+D/dalvikvm: Compiler: Building trace for calcX, offset 0
+D/dalvikvm: 0x4578f378: 0x0019 const-wide/high16 v0, (#16368), (#0)
+D/dalvikvm: 0x4578f37c: 0x0019 const-wide/high16 v2, (#16352), (#0)
+D/dalvikvm: 0x4578f380: 0x0019 const-wide/high16 v4, (#16592), (#0)
+D/dalvikvm: 0x4578f384: 0x00ce div-double/2addr v0, v4, (#0)
+D/dalvikvm: 0x4578f386: 0x00cb add-double/2addr v0, v2, (#0)
+D/dalvikvm: 0x4578f388: 0x0010 return-wide v0, (#0), (#0)
+D/dalvikvm: TRACEINFO (8): 0x4578f378 LCalc;calcX.()D 0 9 of 9, 4 blocks
+D/dalvikvm: Compiling LCalc; calcX
+D/dalvikvm: 9 insns
+D/dalvikvm: 4 blocks in total
+D/dalvikvm: Block 0 (Entry Block) (insn 0000 - 0000 empty)
+D/dalvikvm:   Fallthrough : block 1 (0000)
+D/dalvikvm: Block 1 (Code Block) (insn 0000 - 0008)
+D/dalvikvm: Block 2 (PC Reconstruction) (insn 0000 - 0000 empty)
+D/dalvikvm: Block 3 (Exception Handling) (insn 0000 - 0000 empty)
+D/dalvikvm: Trace Dalvik PC: 0x4578f378
+D/dalvikvm: Dumping LIR insns
+D/dalvikvm: installed code is at 0x45dc2000
+D/dalvikvm: total size is 124 bytes
+D/dalvikvm: 0x45dc2000 (0000): data    0x31c0(12736)
+D/dalvikvm: 0x45dc2002 (0002): data    0x4578(17784)
+D/dalvikvm: 0x45dc2004 (0004): data    0x0044(68)
+D/dalvikvm: 0x45dc2006 (0006): ldr     r0, [r15pc, -#8]
+D/dalvikvm: 0x45dc200a (000a): ldr     r1, [r0, #0]
+D/dalvikvm: 0x45dc200c (000c): adds    r1, r1, #1
+D/dalvikvm: 0x45dc200e (000e): str     r1, [r0, #0]
+D/dalvikvm: -------- entry offset: 0x0000
+D/dalvikvm: L0x4577529c:
+D/dalvikvm: -------- dalvik offset: 0x0000 @ const-wide/high16 v0, (#16368), (#0)
+D/dalvikvm: 0x45dc2010 (0010): vldr    d8, [r15, #96]
+D/dalvikvm: -------- dalvik offset: 0x0002 @ const-wide/high16 v2, (#16352), (#0)
+D/dalvikvm: 0x45dc2014 (0014): vmov.f64  d9, d8
+D/dalvikvm: -------- dalvik offset: 0x0004 @ const-wide/high16 v4, (#16592), (#0)
+D/dalvikvm: 0x45dc2018 (0018): vmov.f64  d10, d9
+D/dalvikvm: -------- dalvik offset: 0x0006 @ div-double/2addr v0, v4, (#0)
+D/dalvikvm: 0x45dc201c (001c): vdivd   d8, d8, d10
+D/dalvikvm: -------- dalvik offset: 0x0007 @ add-double/2addr v0, v2, (#0)
+D/dalvikvm: 0x45dc2020 (0020): vadd    d8, d8, d9
+D/dalvikvm: -------- dalvik offset: 0x0008 @ return-wide v0, (#0), (#0)
+D/dalvikvm: 0x45dc2024 (0024): vmov.f64  d11, d8
+D/dalvikvm: 0x45dc2028 (0028): vstr    d11, [r6, #16]
+D/dalvikvm: 0x45dc202c (002c): vstr    d8, [r5, #0]
+D/dalvikvm: 0x45dc2030 (0030): vstr    d10, [r5, #16]
+D/dalvikvm: 0x45dc2034 (0034): vstr    d9, [r5, #8]
+D/dalvikvm: 0x45dc2038 (0038): blx_1   0x45dc1028
+D/dalvikvm: 0x45dc203a (003a): blx_2   see above
+D/dalvikvm: 0x45dc203c (003c): b       0x45dc2040 (L0x45776078)
+D/dalvikvm: 0x45dc203e (003e): undefined
+D/dalvikvm: L0x45776078:
+D/dalvikvm: -------- reconstruct dalvik PC : 0x4578f388 @ +0x0008
+D/dalvikvm: 0x45dc2040 (0040): ldr     r0, [r15pc, #28]
+D/dalvikvm: Exception_Handling:
+D/dalvikvm: 0x45dc2044 (0044): ldr     r1, [r6, #108]
+D/dalvikvm: 0x45dc2046 (0046): blx     r1
+D/dalvikvm: -------- end of chaining cells (0x0048)
+D/dalvikvm: 0x45dc2060 (0060): .word (0x4578f388)
+D/dalvikvm: 0x45dc2064 (0064): .word (0)
+D/dalvikvm: 0x45dc2068 (0068): .word (0x40d00000)
+D/dalvikvm: 0x45dc206c (006c): .word (0)
+D/dalvikvm: 0x45dc2070 (0070): .word (0x3fe00000)
+D/dalvikvm: 0x45dc2074 (0074): .word (0)
+D/dalvikvm: 0x45dc2078 (0078): .word (0x3ff00000)
+D/dalvikvm: End LCalc;calcX, 6 Dalvik instructions
+D/dalvikvm: threadid=1: last non-daemon thread
+D/dalvikvm: threadid=1: bye!
+D/dalvikvm: DestroyJavaVM waiting for non-daemon threads to exit
+D/dalvikvm: DestroyJavaVM shutting VM down
+D/dalvikvm: VM shutting down
+D/dalvikvm: GC_CONCURRENT freed 32K (880), 23% free 121K/156K, paused 0ms+0ms, total 0ms
+D/dalvikvm: threadid=5: bye!
+I/dalvikvm: threadid=6: ignore signal 3
+D/dalvikvm: threadid=6: bye!
+D/dalvikvm: 1 compilations using 4096 + 124 bytes
+D/dalvikvm: Compiler arena uses 1 blocks (8100 bytes each)
+D/dalvikvm: Compiler work queue length is 0/74
+D/dalvikvm: JIT: table size is 4096, entries used is 200
+D/dalvikvm: JIT: 200 traces, 4096 slots, 5 chains, 1 thresh, Non-blocking
+D/dalvikvm: JIT: 0 Translation chains, 0 interp stubs
+D/dalvikvm: dalvik.vm.jit.op = 10,19,cb,ce,
+D/dalvikvm: Code size stats: 0/0 (compiled/total Dalvik), 0 (native)
+D/dalvikvm: Compiler thread shutting down
+D/dalvikvm: threadid=7: bye!
+D/dalvikvm: Compiler thread has shut down
+D/dalvikvm: threadid=0: suspending daemon id=4 name='FinalizerWatchdogDaemon'
+D/dalvikvm: threadid=0: suspending daemon id=3 name='FinalizerDaemon'
+D/dalvikvm: threadid=0: suspending daemon id=2 name='ReferenceQueueDaemon'
+D/dalvikvm: threadid=0: all daemons have suspended
+D/dalvikvm: VM cleaning up
+D/dalvikvm: LinearAlloc 0x0 used 300348 of 16777216 (1%)

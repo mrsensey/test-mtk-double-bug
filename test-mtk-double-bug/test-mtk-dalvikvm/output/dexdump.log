@@ -1,0 +1,290 @@
+Processing '/sdcard/Mtk.jar'...
+Opened '/sdcard/Mtk.jar', DEX version '035'
+Class #0            -
+  Class descriptor  : 'LCalc;'
+  Access flags      : 0x0001 (PUBLIC)
+  Superclass        : 'Ljava/lang/Object;'
+  Interfaces        -
+  Static fields     -
+    #0              : (in LCalc;)
+      name          : 'A'
+      type          : 'D'
+      access        : 0x0018 (STATIC FINAL)
+    #1              : (in LCalc;)
+      name          : 'B'
+      type          : 'D'
+      access        : 0x0018 (STATIC FINAL)
+    #2              : (in LCalc;)
+      name          : 'D'
+      type          : 'D'
+      access        : 0x0018 (STATIC FINAL)
+    #3              : (in LCalc;)
+      name          : 'EP'
+      type          : 'D'
+      access        : 0x0018 (STATIC FINAL)
+    #4              : (in LCalc;)
+      name          : 'EXPECTED'
+      type          : 'D'
+      access        : 0x0018 (STATIC FINAL)
+    #5              : (in LCalc;)
+      name          : 'EXPECTED_HIGH'
+      type          : 'D'
+      access        : 0x0018 (STATIC FINAL)
+    #6              : (in LCalc;)
+      name          : 'EXPECTED_LOW'
+      type          : 'D'
+      access        : 0x0018 (STATIC FINAL)
+  Instance fields   -
+  Direct methods    -
+    #0              : (in LCalc;)
+      name          : '<init>'
+      type          : '()V'
+      access        : 0x10001 (PUBLIC CONSTRUCTOR)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 1
+      insns size    : 4 16-bit code units
+000374:                                        |[000374] Calc.<init>:()V
+000384: 7010 0b00 0000                         |0000: invoke-direct {v0}, Ljava/lang/Object;.<init>:()V // method@000b
+00038a: 0e00                                   |0003: return-void
+      catches       : (none)
+      positions     : 
+        0x0000 line=2
+      locals        : 
+        0x0000 - 0x0004 reg=0 this LCalc; 
+
+  Virtual methods   -
+    #0              : (in LCalc;)
+      name          : 'calcX'
+      type          : '()D'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 7
+      ins           : 1
+      outs          : 0
+      insns size    : 9 16-bit code units
+00038c:                                        |[00038c] Calc.calcX:()D
+00039c: 1900 f03f                              |0000: const-wide/high16 v0, #long 4607182418800017408 // #3ff0
+0003a0: 1902 e03f                              |0002: const-wide/high16 v2, #long 4602678819172646912 // #3fe0
+0003a4: 1904 d040                              |0004: const-wide/high16 v4, #long 4670232813583204352 // #40d0
+0003a8: ce40                                   |0006: div-double/2addr v0, v4
+0003aa: cb20                                   |0007: add-double/2addr v0, v2
+0003ac: 1000                                   |0008: return-wide v0
+      catches       : (none)
+      positions     : 
+        0x0000 line=20
+        0x0002 line=21
+        0x0008 line=22
+      locals        : 
+        0x0000 - 0x0009 reg=6 this LCalc; 
+
+  source_file_idx   : 8 (Calc.java)
+
+Class #1            -
+  Class descriptor  : 'LMtk;'
+  Access flags      : 0x0001 (PUBLIC)
+  Superclass        : 'Ljava/lang/Object;'
+  Interfaces        -
+  Static fields     -
+    #0              : (in LMtk;)
+      name          : 'DELAY'
+      type          : 'I'
+      access        : 0x001a (PRIVATE STATIC FINAL)
+    #1              : (in LMtk;)
+      name          : 'ITERATIONS'
+      type          : 'I'
+      access        : 0x001a (PRIVATE STATIC FINAL)
+  Instance fields   -
+    #0              : (in LMtk;)
+      name          : 'mFails'
+      type          : 'I'
+      access        : 0x0002 (PRIVATE)
+  Direct methods    -
+    #0              : (in LMtk;)
+      name          : '<init>'
+      type          : '()V'
+      access        : 0x10001 (PUBLIC CONSTRUCTOR)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 1
+      insns size    : 4 16-bit code units
+0003b0:                                        |[0003b0] Mtk.<init>:()V
+0003c0: 7010 0b00 0000                         |0000: invoke-direct {v0}, Ljava/lang/Object;.<init>:()V // method@000b
+0003c6: 0e00                                   |0003: return-void
+      catches       : (none)
+      positions     : 
+        0x0000 line=2
+      locals        : 
+        0x0000 - 0x0004 reg=0 this LMtk; 
+
+    #1              : (in LMtk;)
+      name          : 'main'
+      type          : '([Ljava/lang/String;)V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 1
+      insns size    : 9 16-bit code units
+0003c8:                                        |[0003c8] Mtk.main:([Ljava/lang/String;)V
+0003d8: 2200 0400                              |0000: new-instance v0, LMtk; // type@0004
+0003dc: 7010 0200 0000                         |0002: invoke-direct {v0}, LMtk;.<init>:()V // method@0002
+0003e2: 6e10 0500 0000                         |0005: invoke-virtual {v0}, LMtk;.test:()V // method@0005
+0003e8: 0e00                                   |0008: return-void
+      catches       : (none)
+      positions     : 
+        0x0000 line=39
+        0x0005 line=40
+        0x0008 line=41
+      locals        : 
+
+    #2              : (in LMtk;)
+      name          : 'sleep'
+      type          : '(J)V'
+      access        : 0x0002 (PRIVATE)
+      code          -
+      registers     : 4
+      ins           : 3
+      outs          : 2
+      insns size    : 13 16-bit code units
+0003ec:                                        |[0003ec] Mtk.sleep:(J)V
+0003fc: 7120 1200 3200                         |0000: invoke-static {v2, v3}, Ljava/lang/Thread;.sleep:(J)V // method@0012
+000402: 0e00                                   |0003: return-void
+000404: 0d00                                   |0004: move-exception v0
+000406: 7100 1000 0000                         |0005: invoke-static {}, Ljava/lang/Thread;.currentThread:()Ljava/lang/Thread; // method@0010
+00040c: 0c00                                   |0008: move-result-object v0
+00040e: 6e10 1100 0000                         |0009: invoke-virtual {v0}, Ljava/lang/Thread;.interrupt:()V // method@0011
+000414: 28f7                                   |000c: goto 0003 // -0009
+      catches       : 1
+        0x0000 - 0x0003
+          Ljava/lang/InterruptedException; -> 0x0004
+      positions     : 
+        0x0000 line=32
+        0x0003 line=36
+        0x0004 line=33
+        0x0005 line=34
+      locals        : 
+        0x0000 - 0x000d reg=1 this LMtk; 
+
+  Virtual methods   -
+    #0              : (in LMtk;)
+      name          : 'test'
+      type          : '()V'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 7
+      ins           : 1
+      outs          : 3
+      insns size    : 118 16-bit code units
+000424:                                        |[000424] Mtk.test:()V
+000434: 2201 0300                              |0000: new-instance v1, LCalc; // type@0003
+000438: 7010 0000 0100                         |0002: invoke-direct {v1}, LCalc;.<init>:()V // method@0000
+00043e: 6200 0b00                              |0005: sget-object v0, Ljava/lang/System;.out:Ljava/io/PrintStream; // field@000b
+000442: 1a02 0000                              |0007: const-string v2, "
+Expected value: " // string@0000
+000446: 6e20 0700 2000                         |0009: invoke-virtual {v0, v2}, Ljava/io/PrintStream;.print:(Ljava/lang/String;)V // method@0007
+00044c: 6200 0b00                              |000c: sget-object v0, Ljava/lang/System;.out:Ljava/io/PrintStream; // field@000b
+000450: 1802 0000 0000 8000 e03f               |000e: const-wide v2, #double 0.500061 // #3fe0008000000000
+00045a: 6e30 0900 2003                         |0013: invoke-virtual {v0, v2, v3}, Ljava/io/PrintStream;.println:(D)V // method@0009
+000460: 6200 0b00                              |0016: sget-object v0, Ljava/lang/System;.out:Ljava/io/PrintStream; // field@000b
+000464: 6e10 0800 0000                         |0018: invoke-virtual {v0}, Ljava/io/PrintStream;.println:()V // method@0008
+00046a: 1200                                   |001b: const/4 v0, #int 0 // #0
+00046c: 1302 e803                              |001c: const/16 v2, #int 1000 // #3e8
+000470: 3520 3700                              |001e: if-ge v0, v2, 0055 // +0037
+000474: 6e10 0100 0100                         |0020: invoke-virtual {v1}, LCalc;.calcX:()D // method@0001
+00047a: 0b02                                   |0023: move-result-wide v2
+00047c: 1604 0a00                              |0024: const-wide/16 v4, #int 10 // #a
+000480: 7030 0400 4605                         |0026: invoke-direct {v6, v4, v5}, LMtk;.sleep:(J)V // method@0004
+000486: 1804 d1dc ffff 7f00 e03f               |0029: const-wide v4, #double 0.500061 // #3fe0007fffffdcd1
+000490: 3004 0204                              |002e: cmpg-double v4, v2, v4
+000494: 3a04 0b00                              |0030: if-ltz v4, 003b // +000b
+000498: 1804 2f23 0000 8000 e03f               |0032: const-wide v4, #double 0.500061 // #3fe000800000232f
+0004a2: 2f04 0204                              |0037: cmpl-double v4, v2, v4
+0004a6: 3d04 1900                              |0039: if-lez v4, 0052 // +0019
+0004aa: 5264 0900                              |003b: iget v4, v6, LMtk;.mFails:I // field@0009
+0004ae: d804 0401                              |003d: add-int/lit8 v4, v4, #int 1 // #01
+0004b2: 5964 0900                              |003f: iput v4, v6, LMtk;.mFails:I // field@0009
+0004b6: 6204 0a00                              |0041: sget-object v4, Ljava/lang/System;.err:Ljava/io/PrintStream; // field@000a
+0004ba: 6e20 0600 0400                         |0043: invoke-virtual {v4, v0}, Ljava/io/PrintStream;.print:(I)V // method@0006
+0004c0: 6204 0a00                              |0046: sget-object v4, Ljava/lang/System;.err:Ljava/io/PrintStream; // field@000a
+0004c4: 1a05 0300                              |0048: const-string v5, " iteration FAILED with: " // string@0003
+0004c8: 6e20 0700 5400                         |004a: invoke-virtual {v4, v5}, Ljava/io/PrintStream;.print:(Ljava/lang/String;)V // method@0007
+0004ce: 6204 0a00                              |004d: sget-object v4, Ljava/lang/System;.err:Ljava/io/PrintStream; // field@000a
+0004d2: 6e30 0900 2403                         |004f: invoke-virtual {v4, v2, v3}, Ljava/io/PrintStream;.println:(D)V // method@0009
+0004d8: d800 0001                              |0052: add-int/lit8 v0, v0, #int 1 // #01
+0004dc: 28c8                                   |0054: goto 001c // -0038
+0004de: 6200 0b00                              |0055: sget-object v0, Ljava/lang/System;.out:Ljava/io/PrintStream; // field@000b
+0004e2: 2201 0900                              |0057: new-instance v1, Ljava/lang/StringBuilder; // type@0009
+0004e6: 7010 0c00 0100                         |0059: invoke-direct {v1}, Ljava/lang/StringBuilder;.<init>:()V // method@000c
+0004ec: 1a02 0100                              |005c: const-string v2, "
+Finished test with " // string@0001
+0004f0: 6e20 0e00 2100                         |005e: invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@000e
+0004f6: 0c01                                   |0061: move-result-object v1
+0004f8: 5262 0900                              |0062: iget v2, v6, LMtk;.mFails:I // field@0009
+0004fc: 6e20 0d00 2100                         |0064: invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;.append:(I)Ljava/lang/StringBuilder; // method@000d
+000502: 0c01                                   |0067: move-result-object v1
+000504: 1a02 0200                              |0068: const-string v2, " fails
+" // string@0002
+000508: 6e20 0e00 2100                         |006a: invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@000e
+00050e: 0c01                                   |006d: move-result-object v1
+000510: 6e10 0f00 0100                         |006e: invoke-virtual {v1}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@000f
+000516: 0c01                                   |0071: move-result-object v1
+000518: 6e20 0a00 1000                         |0072: invoke-virtual {v0, v1}, Ljava/io/PrintStream;.println:(Ljava/lang/String;)V // method@000a
+00051e: 0e00                                   |0075: return-void
+      catches       : (none)
+      positions     : 
+        0x0000 line=11
+        0x0005 line=13
+        0x000c line=14
+        0x0016 line=15
+        0x001b line=17
+        0x0020 line=18
+        0x0024 line=19
+        0x0029 line=20
+        0x003b line=21
+        0x0041 line=22
+        0x0046 line=23
+        0x004d line=24
+        0x0052 line=17
+        0x0055 line=27
+        0x0075 line=28
+      locals        : 
+        0x0000 - 0x0076 reg=6 this LMtk; 
+
+  source_file_idx   : 32 (Mtk.java)
+
+Class #2            -
+  Class descriptor  : 'Lnet/idolon/test/mtk/BuildConfig;'
+  Access flags      : 0x0011 (PUBLIC FINAL)
+  Superclass        : 'Ljava/lang/Object;'
+  Interfaces        -
+  Static fields     -
+    #0              : (in Lnet/idolon/test/mtk/BuildConfig;)
+      name          : 'DEBUG'
+      type          : 'Z'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+  Instance fields   -
+  Direct methods    -
+    #0              : (in Lnet/idolon/test/mtk/BuildConfig;)
+      name          : '<init>'
+      type          : '()V'
+      access        : 0x10001 (PUBLIC CONSTRUCTOR)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 1
+      insns size    : 4 16-bit code units
+000520:                                        |[000520] net.idolon.test.mtk.BuildConfig.<init>:()V
+000530: 7010 0b00 0000                         |0000: invoke-direct {v0}, Ljava/lang/Object;.<init>:()V // method@000b
+000536: 0e00                                   |0003: return-void
+      catches       : (none)
+      positions     : 
+        0x0000 line=4
+      locals        : 
+        0x0000 - 0x0004 reg=0 this Lnet/idolon/test/mtk/BuildConfig; 
+
+  Virtual methods   -
+  source_file_idx   : 7 (BuildConfig.java)
+
